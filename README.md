@@ -1,5 +1,5 @@
 # About url check client
-url_check_client.py is a client to make requests vs web app running on url-check.vimi.space.
+url_check_client.py is a client to make requests vs RESTful Web Services running on url-check.vimi.space.
 
 Note:
 If your firewall blocks outgoing connection, to reach the service on url-check.vimi.space, 
