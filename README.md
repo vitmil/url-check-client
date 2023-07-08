@@ -13,16 +13,14 @@ outgoing traffic must be allowed for:
 ## Output formatted text
 url_check_client.py  -t www.site.com
 
-url_check_client.py  -t http://www.site.com
+url_check_client.py  -t http://site.com
 
-url_check_client.py  -t https://www.site.com
+url_check_client.py  -t https://site.com
 
-url_check_client.py  -t www.site.com  -o hr 
+## Output json format wants -o json argument
 
-
-
-## Output json format
 url_check_client.py -t www.site.com  -o json
+
 
 
 # Syntax to pass file: 
@@ -32,9 +30,9 @@ url_check_client.py -f <file>
 
 url_check_client.py -f <file> -o hr 
 
-## Output json format 
-url_check_client.py -f <file> -o json 
+## Output json format wants -o json argument
 
+url_check_client.py -f <file> -o json 
 
 
 
