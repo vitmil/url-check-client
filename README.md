@@ -26,13 +26,13 @@ url_check_client.py -t www.site.com  -o json
 # Syntax to pass file: 
 
 ## Output formatted text
-url_check_client.py -f <file> 
 
-url_check_client.py -f <file> -o hr 
+url_check_client.py -f \<file> 
+
 
 ## Output json format wants -o json argument
 
-url_check_client.py -f <file> -o json 
+url_check_client.py -f \<file> -o json 
 
 
 
