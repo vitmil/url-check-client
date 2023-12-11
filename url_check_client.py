@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
 """
 Author: Vittorio Milazzo - <vittorio.milazzo@gmail.com>
 
 # url_check
-url_check_client is a client to make requests vs RESTful Web Services running on url-check.vimi.space.
+url_check_client is a client to make requests vs RESTful Web Services running on 129.152.26.254.
 
-For more info about the service, go to: https://url-check.vimi.space/about
+For more info about the service, go to: https://129.152.26.254/about
 
 Note:
-If your firewall blocks outgoing connection, to reach the service on url-check.vimi.space, 
+If your firewall blocks outgoing connection, to reach the service on 129.152.26.254, 
 outgoing traffic must be allowed for:
 
  - tcp port 8000 for http requests
@@ -52,16 +53,17 @@ requests.packages.urllib3.disable_warnings()
 
 # == Glob Vars ==
 #
-# define the server to point
-server = "url-check.vimi.space" # host prod
-#server = "192.168.56.100"      # host dev
+# define the url_check_server to point
+#server = "url-check.vimi.space" # host prod
+url_check_server = "129.152.26.254"        # host prod
+#url_check_server = "192.168.56.100"       # host dev
 
 # Public api-key (limited)
 API_KEY = "f438988e-4acc-4fb3-ae81-0a0c3729395a"
 
 # Argparse 
 parser = argparse.ArgumentParser(
-    description = "Url Check Client - command-line client to make requests vs url-check.vimi.space", 
+    description = "Url Check Client - command-line client to make requests vs URL CHECK", 
     #epilog = "Syntax example to scan single target: url_check_client -t www.google.com \n Syntax example to scan multiple targets passing a file: url_check_client -u <username> -p <password> -f <file_with_urls>"
     )
 ## argparse combinational options 
@@ -94,17 +96,17 @@ conn_type = args.conn_type
 # == Routine ==
 #
 def print_message():
-    print("For further info about service, visit https://url-check.vimi.space")
-    print("To report a bug send an email to url-check@vimi.space.\n")
+    print("For further info about service, visit https://129.152.26.254")
+    print("To report a bug send an email to vimi.code@gmail.com.\n")
 
 
 def start():
     # if target is passed (-t)
     if target:
         if conn_type == "https":
-            url = f"https://url-check.vimi.space:8443/scanurl/?target={target}&output={output}" # https request
+            url = f"https://{url_check_server}:8443/scanurl/?target={target}&output={output}" # https request
         else:
-            url = f"http://url-check.vimi.space:8000/scanurl/?target={target}&output={output}" # http  request
+            url = f"http://{url_check_server}:8000/scanurl/?target={target}&output={output}" # http  request
 
         # Set the headers
         headers = {"apikey": API_KEY}
@@ -128,9 +130,9 @@ def start():
             sys.exit(1)
     
         if conn_type == "https":
-            url = f"https://url-check.vimi.space:8443/scanfile/?output={output}"
+            url = f"https://{url_check_server}:8443/scanfile/?output={output}"
         else:
-            url = f"http://url-check.vimi.space:8000/scanfile/?output={output}"
+            url = f"http://{url_check_server}:8000/scanfile/?output={output}"
 
         # Set the headers
         headers = {
@@ -158,6 +160,6 @@ def start():
             print(response.text)            
 
 # start script
-print()
+#print()
 start()
 print_message()
