@@ -102,4 +102,12 @@ Url Check is a Web Application and RESTful Web Services (written in Python and F
  • OCSP CA issuers
  
  • OCSP CRL distribution points
+
+
+# Screenshots
+
+./url_check_client.py -t www.site.com
  
+![1](https://github.com/vitmil/url-check-client/assets/38243931/309bbf2d-3265-4eee-9452-6cbb6c794789)
+![2](https://github.com/vitmil/url-check-client/assets/38243931/7d4fca33-f738-4fc0-a003-8dc85a3f5f9a)
+
