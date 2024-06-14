@@ -1,8 +1,8 @@
 # About url check client
-url_check_client.py is a client to make requests vs URL CHECK, a RESTful Web Services running on https://129.152.26.254
+url_check_client.py is a client to make requests vs URL CHECK, a RESTful Web Services running on (https://url-check.duckdns.org/)
 
 Note:
-If your firewall blocks outgoing connection, to reach the service on url-check (IP 129.152.26.254), 
+If your firewall blocks outgoing connection, to reach the service on (https://url-check.duckdns.org/)
 outgoing traffic must be allowed for:
 
 - tcp port 8000 for http requests
@@ -38,7 +38,7 @@ url_check_client.py -f \<file> -o json
 
 # What does Url Check do
 
-#### https://https://129.152.26.254/about
+#### https://url-check.duckdns.org/about
 
 Url Check is a Web Application and RESTful Web Services (written in Python and Fast API) you can use to get various informations about a specific (or more) URL.
 
