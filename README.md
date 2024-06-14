@@ -1,8 +1,8 @@
 # About url check client
-url_check_client.py is a client to make requests vs URL CHECK, a RESTful Web Services running on (https://url-check.duckdns.org/)
+url_check_client.py is a client to make requests vs URL CHECK, a RESTful Web Services running on https://url-check.duckdns.org
 
 Note:
-If your firewall blocks outgoing connection, to reach the service on (https://url-check.duckdns.org/)
+If your firewall blocks outgoing connection, to reach the service on https://url-check.duckdns.org
 outgoing traffic must be allowed for:
 
 - tcp port 8000 for http requests
