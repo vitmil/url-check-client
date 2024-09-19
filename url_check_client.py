@@ -5,12 +5,12 @@
 Author: Vittorio Milazzo - <vittorio.milazzo@gmail.com>
 
 # url_check
-url_check_client is a client to make requests vs RESTful Web Services running on 129.152.26.254.
+url_check_client is a client to make requests vs RESTful Web Services running on https://url-check.duckdns.org/.
 
-For more info about the service, go to: https://129.152.26.254/about
+For more info about the service, go to: https://url-check.duckdns.org//about
 
 Note:
-If your firewall blocks outgoing connection, to reach the service on 129.152.26.254, 
+If your firewall blocks outgoing connection, to reach the service on https://url-check.duckdns.org/, 
 outgoing traffic must be allowed for:
 
  - tcp port 8000 for http requests
